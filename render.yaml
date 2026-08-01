@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: avito-hunter-server
+    runtime: docker
+    plan: free
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_SECRET
+        generateValue: true
